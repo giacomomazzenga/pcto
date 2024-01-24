@@ -5,13 +5,12 @@ int main ()
 {
     char x [50];
 
-    printf("vuoi sapere come funziona la figa?\n");
+    printf("vuoi sapere cosa è il comunismo ?\n");
     scanf("%s", x);
     while (strcmp( x, "si") == 0)
     {
-        printf("allora ascolta, la figa è un'invenzione di einstein e di Praust ed ha tre buchi, uno per la ciola, uno per pisciare, e uno è il buco del culo che se non ben lavato puzza di merda\n");
-        printf("vuoi sapere come funziona la figa?\n");
+        printf("il comunismo è una dottrina politica, economica e sociale fondata sulla proprietà non individuale ma comune dei beni esistenti e dei mezzi di produzione; com., l'attuazione, sul piano etico e politico, di ogni concezione più o meno direttamente connessa con tale dottrina, nonché il regime che ne deriva e ne è l'espressione.\n");
+        printf("vuoi sapere cosa è il comunismo?\n");
         scanf("%s", x);
     }
-
 }
