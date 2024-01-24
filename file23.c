@@ -25,7 +25,6 @@ int main ()
     scanf("%f", &lato2 );
     printf("inserisci una dimensione del triangolo");
     scanf("%f", &lato3 );
-    printf("l'area del triangolo è ");
     p = (lato1+lato2+lato3)/2;
     pp = p*2;
     a = radiceQuadrata(p*(p-lato1)*(p-lato2)*(p-lato3)); 
