@@ -3,12 +3,12 @@
 #include <string.h>
 #include <unistd.h>
 
-  void cognome1 (char a [20],  char b [20])
+  char cognome1 (char a [20],  char b [20])
 {
-    a = 'b' || 'c' || 'd' || 'f' || 'g' || 'h' || 'j';
-    gets(a >4);
+    a == ( 'b' || 'c' || 'd' || 'f' || 'g' || 'h' || 'j');
+    gets(a<4);
     printf ("le lettere del cognome del codice fiscale sono:%s", a  );
-   
+   return ( a );
 }
 
 int main ()
