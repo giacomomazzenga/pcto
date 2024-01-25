@@ -77,7 +77,7 @@ int main()
             }
             else if (strcmp(risposta3, "2") == 0)
             {
-                printf("Posizione ottenuta, la tua posizione attuale è Viale Romania 32\n\nLe biblioteche più vicine a te sono\n1. Mediateca ex Fabbrica Peroni (2,4km)\n2. “La Sapienza”,biblioteca di Filosofia (1km)\n3. Luiss Guido Carli, biblioteca (1,4km)\n4. Biblioteca Europa (2.3km)\n5. Biblioteca Villa Leopardi (2,8km)\n6.Biblioteca Arturo Chiari (2,9km)\n7. Biblioteca Tullio De Mauro (2,5km)\n8. Biblioteca Universitaria Alessandrina (2,3km)\n9. Biblioteca Ennio Flaiano (5,9km)\n10. Sala lettura 24H (1km)\n\n");
+                printf("Posizione ottenuta, la tua posizione attuale è Viale Romania 32\n\nLe biblioteche più vicine a te sono\n1. Mediateca ex Fabbrica Peroni (2,4km)\n2. “La Sapienza”,biblioteca di Filosofia (1km)\n3. Luiss Guido Carli, biblioteca (1,4km)\n4. Biblioteca Europa (2.3km)\n5. Biblioteca Villa Leopardi (2,8km)\n6. Biblioteca Arturo Chiari (2,9km)\n7. Biblioteca Tullio De Mauro (2,5km)\n8. Biblioteca Universitaria Alessandrina (2,3km)\n9. Biblioteca Ennio Flaiano (5,9km)\n10. Sala lettura 24H (1km)\n\n");
                 printf("Vuoi tornare alla pagina precedente? (si/no)");
                 scanf(" %s", risposta4);
                 if (strcmp(risposta4, "si") == 0)
@@ -129,7 +129,7 @@ int main()
             scanf(" %s", risposta6);
             if (strcmp(risposta6, "1") == 0)
             {
-                printf("Posizione ottenuta, la tua posizione attuale è Viale Romania 32, i parchi nella tua zona sono:\n1. Villa Ada Savoia (3,7km)\n2. Villa Glori (2,3km\n3. Villa Borghese (2,1km))");
+                printf("Posizione ottenuta, la tua posizione attuale è Viale Romania 32, i parchi nella tua zona sono:\n1. Villa Ada Savoia (3,7km)\n2. Villa Glori (2,3km)\n3. Villa Borghese (2,1km)\n");
                 printf("Vuoi tornare alla pagina precedente? (si/no)\n");
                 scanf(" %s", risposta4);
                 if (strcmp(risposta4, "si") == 0)
@@ -139,7 +139,7 @@ int main()
             }
             else if (strcmp(risposta6, "2") == 0)
             {
-                printf("Posizione ottenuta, la tua posizione attuale è Viale Romania 32, i parchi nella tua zona sono:\n1. Villa Ada Savoia (3,7km)\n2. Villa Glori (2,3km\n3. Villa Borghese (2,1km))\n\n");
+                printf("Posizione ottenuta, la tua posizione attuale è Viale Romania 32, i parchi nella tua zona sono:\n1. Villa Ada Savoia (3,7km)\n2. Villa Glori (2,3km)\n3. Villa Borghese (2,1km)\n\n");
                 printf("Vuoi tornare alla pagina precedente? (si/no)\n");
                 scanf(" %s", risposta4);
                 if (strcmp(risposta4, "si") == 0)
@@ -164,7 +164,7 @@ int main()
         }
         else if(strcmp(risposta6, "2") == 0)
         {
-            printf("Di seguito una lista dei migliori parchi di Roma");
+            printf("Di seguito una lista dei migliori parchi di Roma\n");
             printf("1. Villa Ada\n");
             printf("2. Il Parco degli Acquedotti\n");
             printf("3. La Terrazza del Pincio\n");
