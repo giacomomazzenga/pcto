@@ -236,7 +236,7 @@ int main()
     {
         printf("Benvenuto nella sezione -Controllo del sonno-\n");
         sleep(2);
-        printf("Inserisci le ore di sonno dormite\n");
+        printf("Inserisci le ore di sonno dormite");
         scanf("%f", &risposta7);
         printf("Inserire il numero di risvegli durante la notte\n (da 0 a 4)\n\n");
         scanf ("%d", &risposta8);
@@ -817,7 +817,7 @@ int main()
         printf("Benvenuto nella sezione Schede di allenamento\n");
         printf("Inserisci quale è il tuo obbiettivo da raggiungere attraverso queste schede:\n");
         printf("1. Definizione\n2. Dimagrimento\n3. Massa muscolare (1/2/3)\n\n");
-        printf("(Ricordati sempre di affincare l'esercizio all'alimentazione, puoi consultare la sezione 7 per avere un piano di alimentazione bilanciato)");
+        printf("(Ricordati sempre di affincare l'esercizio all'alimentazione, puoi consultare la sezione 7 per avere un piano di alimentazione bilanciato)\n");
         scanf("%d", &risposta10);
         if (risposta10 == 1)
         {
@@ -874,11 +874,15 @@ int main()
                 goto inizio;
             }
         }
+        else if(strcmp(risposta6, "+") == 0)
+        {
+            goto inizio1;
+        }
     }
     else if(strcmp(risposta1, "7.") == 0 || strcmp(risposta1, "Alimentazione") == 0 || strcmp(risposta1, "cibo") == 0 || strcmp(risposta1, "7") == 0) 
     {
         printf("Benvenuto nella sezione -Alimentazione-");
-        printf("Seguire una dieta bilanciata è fondamentale per avere una vita sana, qui puoi trovare degli esempi di diete bilanciate.\nA seconda del proprio obiettivo, incrementare o diminuire le dosi.\nVuoi continuare? (si/no)");
+        printf("Seguire una dieta bilanciata è fondamentale per avere una vita sana, qui puoi trovare degli esempi di diete bilanciate.\nA seconda del proprio obiettivo, incrementare o diminuire le dosi.\nVuoi continuare? (si/no)\n");
         scanf("%s", risposta11 );
         if (strcmp(risposta11, "si") == 0)
         {
