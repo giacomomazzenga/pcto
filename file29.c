@@ -236,228 +236,235 @@ int main()
     {
         printf("Benvenuto nella sezione -Controllo del sonno-\n");
         sleep(2);
-        printf("Inserisci le ore di sonno dormite");
+        printf("Inserisci le ore di sonno dormite\nO premi + per tornare alla pagina precedente");
         scanf("%f", &risposta7);
-        printf("Inserire il numero di risvegli durante la notte\n (da 0 a 4)\n\n");
-        scanf ("%d", &risposta8);
-        if (risposta7 >= 8.30 && risposta8 == 0)
+        if(strcmp(risposta7, "+") == 0)
         {
-            printf("Il tuo sonno è stato ottimale\nIl tuo punteggio sonno è: 100\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
-            {
-                goto inizio;
-            }
+            goto inizio1;
         }
-        else if (risposta7 <= 8.30 && risposta7> 6.0  && risposta8 == 0)
+        else
         {
-            printf("La durata del sonno è stata abbastanza breve ma non hai avuto risvegli\nIl tuo punteggio sonno è: 80\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            printf("Inserire il numero di risvegli durante la notte\n (da 0 a 4)\n\n");
+            scanf ("%d", &risposta8);
+            if (risposta7 >= 8.30 && risposta8 == 0)
             {
-                goto inizio;
+                printf("Il tuo sonno è stato ottimale\nIl tuo punteggio sonno è: 100\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 0)
-        {
-            printf("La durata del sonno è stata breve ma non ci sono stati risvegli\nIl tuo punteggio sonno è: 60\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 <= 8.30 && risposta7> 6.0  && risposta8 == 0)
             {
-                goto inizio;
+                printf("La durata del sonno è stata abbastanza breve ma non hai avuto risvegli\nIl tuo punteggio sonno è: 80\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 0)
-        {
-            printf("La durata del sonno è stata troppo breve ma non ci sono stati risvegli\nIl tuo punteggio sonno è: 40\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 0)
             {
-                goto inizio;
+                printf("La durata del sonno è stata breve ma non ci sono stati risvegli\nIl tuo punteggio sonno è: 60\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 > 8.30 && risposta8 == 1)
-        {
-            printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 90\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 0)
             {
-                goto inizio;
+                printf("La durata del sonno è stata troppo breve ma non ci sono stati risvegli\nIl tuo punteggio sonno è: 40\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 1)
-        {
-            printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 70\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 > 8.30 && risposta8 == 1)
             {
-                goto inizio;
+                printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 90\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 1)
-        {
-            printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 50\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 1)
             {
-                goto inizio;
+                printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 70\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 1)
-        {
-            printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 30\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 1)
             {
-                goto inizio;
+                printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 50\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 > 8.30 && risposta8 == 2)
-        {
-            printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 85\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 1)
             {
-                goto inizio;
+                printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 30\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 2)
-        {
-            printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 65\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 > 8.30 && risposta8 == 2)
             {
-                goto inizio;
+                printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 85\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 2)
-        {
-            printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 45\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 2)
             {
-                goto inizio;
+                printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 65\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 2)
-        {
-            printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 25\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 2)
             {
-                goto inizio;
+                printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 45\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 > 8.30 && risposta8 == 3)
-        {
-            printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 80\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 2)
             {
-                goto inizio;
+                printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 25\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 3)
-        {
-            printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 60\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 > 8.30 && risposta8 == 3)
             {
-                goto inizio;
+                printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 80\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 3)
-        {
-            printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 30\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 3)
             {
-                goto inizio;
+                printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 60\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 3)
-        {
-            printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 10\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 3)
             {
-                goto inizio;
+                printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 30\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 >= 8.30 && risposta8 == 4)
-        {
-            printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 75\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 3)
             {
-                goto inizio;
+                printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 10\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 4)
-        {
-            printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 55\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 >= 8.30 && risposta8 == 4)
             {
-                goto inizio;
+                printf("La tua durata del sonno è stata ottimale, ma c'è stato un risveglio\nIl tuo punteggio è 75\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 4)
-        {
-            printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 25\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 <= 8.30 && risposta7>= 6.0  && risposta8 == 4)
             {
-                goto inizio;
+                printf("La durata del sonno è stata abbastanza breve e hai avuto risvegli\nIl tuo punteggio sonno è: 55\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 4)
-        {
-            printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 5\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 6.0 && risposta7>= 4.0 && risposta8 == 4)
             {
-                goto inizio;
+                printf("La durata del sonno è stata breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 25\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta7 <= 0 )
-        {
-            printf("errore\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7<= 4.0 && risposta7> 0 && risposta8 == 4)
             {
-                goto inizio;
+                printf("la durata del sonno è stata troppo breve e ci sono stati risvegli\nIl tuo punteggio sonno è: 5\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
-        }
-        else if (risposta8 <= 0 )
-        {
-            printf("errore\n");
-            printf("Desideri tornare alla pagina precedente? (si/no)");
-            scanf(" %s", risposta4);
-            if (strcmp(risposta4, "si") == 0)
+            else if (risposta7 <= 0 )
             {
-                goto inizio;
+                printf("errore\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
+            }
+            else if (risposta8 <= 0 )
+            {
+                printf("errore\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0)
+                {
+                    goto inizio;
+                }
             }
         }   
     }
