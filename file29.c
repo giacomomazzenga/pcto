@@ -12,6 +12,7 @@ int main()
     float risposta7;
     int risposta8;
     float risposta9;
+    int risposta10;
     inizio1:
     printf("Salve e benvenuti sulla nuova app STAYHEALTHY per il benessere!\n \nSelezionare una delle seguenti opzioni");
     inizio:
@@ -809,14 +810,79 @@ int main()
             }
         }
     }
-    //else if
+    else if(strcmp(risposta1, "6.") == 0 || strcmp(risposta1, " Schede di allenamento") == 0 || strcmp(risposta1, "schede") == 0 || strcmp(risposta1, "6") == 0) 
+    {
+        printf("Benvenuto nella sezione Schede di allenamento\n");
+        printf("Inserisci quale è il tuo obbiettivo da raggiungere attraverso queste schede:\n");
+        printf("1. Definizione\n2. Dimagrimento\n3. Massa muscolare (1/2/3)");
+        scanf("%d", &risposta10);
+        if (risposta10 == 1)
+        {
+            printf("\n\nRiscaldamento:\n5\'Crunch a terra 3x25\nPlank sui gomiti 3x30\'\nCrunch doppio 3x20\nPanca piana con manubri\n\n");
+            printf("Defaticamento:\n5 minuti camminata\nStretching\n\n");
+            sleep(1);
+            printf("Scheda A:\nCARDIO 10\'\nPANCA 5 X 5 3\'\nSQUAT FRONTALE 5 X 5 3\'-4\'\nPANCA STRETTA 3 X 5 3\'\nPLANCH FRONTALI 5 X 30” 30” REC\nREVERSE CRUNCH 5 X 10 10”\nCARDIO 10\'\n\n\n");
+            sleep(1);
+            printf("Scheda B:\nCARDIO 10\'\nTRAZIONI ALLA SBARRA, PRESA STRETTA 5X5\nCURL CON BILANCIERE 8 X 5\nPLANCH FRONTALE 3 X 10 CARDIO 10\'\n\n\n");
+            sleep(1);
+            printf("Scheda C:\nCARDIO 10\'\nTRAZIONI ALLA SBARRA 5 X 5 3-4 REC\nSQUAT 5 X 5\nPANCA 5 X 5\nPLANCH  FRONTALE 5 X 1\nCARDIO 10\'\n\n\n\n");
+            sleep(1);
+            printf("Scheda D:\nCARDIO 10\'\nPUSH PRESS A 1 BRACCIO 5 X 5\nREMATORE A 1 BRACCIO AL MULTYPOWER 5 X 5\nAFFONDI CON MANUBRI ALLE SPALLE 5 X 5\nSTABILIZZAZIONI LATERALI 4 X 30”\nCARDIO 10\'\n\n\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta10 == 2)
+        {
+            printf("\n\nRiscaldamento:\n5\'Crunch a terra 3x25\nPlank sui gomiti 3x30\'\nCrunch doppio 3x20\nPanca piana con manubri\n\n");
+            printf("Defaticamento:\n5 minuti camminata\nStretching");
+            sleep(1);
+            printf("Riscaldamento\nScheda A:\nPectoral machine 3x12\nAperture con manubri\nCavi in basso 3x15\nCorda in basso 4\'\nDefaticamento\n\n\n");
+            sleep(1);
+            printf("Riscaldamento\nScheda B:\nLat machine inversa 4x12 + 2 strip\nLow row machine 3x15\nCurl con entrambi i manubri 3x15\nCurl al cavo 3x12\nDefaticamento\n\n\n");
+            sleep(1);
+            printf("Riscaldamento\nScheda C:\nAffondi in camminata 4x20\nLeg extension 3x15 + 2 strip\nLeg curl 3x15\nShoulder press 3x12\nAlzate laterali 3x12\nDefaticamento\n\n\n");
+            sleep(1);
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta10 == 3)
+        {
+            printf("\n\nRiscaldamento:\n5\'Crunch a terra 3x25\nPlank sui gomiti 3x30\'\nCrunch doppio 3x20\nPanca piana con manubri\n\n");
+            printf("Defaticamento:\n5 minuti camminata\nStretching");
+            sleep(1);
+            printf("Riscaldamento\nScheda A:\nApertura panca a 30°\nPanca inclinata libera 4x8 + 1 strip\nPanca piana libera\nPanca stretta 3x8 + 1 strip\nDip libero 3xtmax\n\n\n")
+            printf("Riscaldamento\nScheda B:\nRematore con bilanciere 3x8\nLat machine larga 3x8\nStacchi con bilanciere\nCurl alternato con manubri 3x8\nCurl con bilanciere 2x8\n\n\n")
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
 
 
 
+GIORNO 3
+Scheda (gambe e dorso)
+3x8 + 1 strip.
+Peso
+Affondi in camminata con manubri 3x20
+Leg extension 3x12 + 1 strip.
+Squat con passo laterale 2x25
+Spinte con manubri da seduto 3x8 + 1 strip.
+Shoulder press 3x8 + 1 strip.
 
-
+3x12 + 1 strip")
+        }
+    }
 }
-
 
 
 
