@@ -858,31 +858,24 @@ int main()
             printf("\n\nRiscaldamento:\n5\'Crunch a terra 3x25\nPlank sui gomiti 3x30\'\nCrunch doppio 3x20\nPanca piana con manubri\n\n");
             printf("Defaticamento:\n5 minuti camminata\nStretching");
             sleep(1);
-            printf("Riscaldamento\nScheda A:\nApertura panca a 30°\nPanca inclinata libera 4x8 + 1 strip\nPanca piana libera\nPanca stretta 3x8 + 1 strip\nDip libero 3xtmax\n\n\n")
-            printf("Riscaldamento\nScheda B:\nRematore con bilanciere 3x8\nLat machine larga 3x8\nStacchi con bilanciere\nCurl alternato con manubri 3x8\nCurl con bilanciere 2x8\n\n\n")
+            printf("Riscaldamento\nScheda A:\nApertura panca a 30°\nPanca inclinata libera 4x8 + 1 strip\nPanca piana libera\nPanca stretta 3x8 + 1 strip\nDip libero 3xtmax\nDefaticamento\n\n\n");
+            sleep(1);
+            printf("Riscaldamento\nScheda B:\nRematore con bilanciere 3x8\nLat machine larga 3x8\nStacchi con bilanciere\nCurl alternato con manubri 3x8\nCurl con bilanciere 2x8\nDefaticamento\n\n\n");
+            sleep(1);
+            printf("Riscaldamento\nAffondi in camminata con manubri 3x20\nLeg extension 3x12\nSquat con passo laterale 2x25\nSpinte con manubri da seduto 3x8\nShoulder press 3x8\nDefaticamento\n\n\n");
+            sleep(1);
             printf("Desideri tornare alla pagina precedente? (si/no)");
             scanf(" %s", risposta4);
             if (strcmp(risposta4, "si") == 0)
             {
                 goto inizio;
             }
-
-
-
-GIORNO 3
-Scheda (gambe e dorso)
-3x8 + 1 strip. 
-Peso
-Affondi in camminata con manubri 3x20
-Leg extension 3x12 + 1 strip.
-Squat con passo laterale 2x25
-Spinte con manubri da seduto 3x8 + 1 strip.
-Shoulder press 3x8 + 1 strip.
-
-3x12 + 1 strip")
         }
     }
 }
+
+
+
 
 
 
