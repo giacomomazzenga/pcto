@@ -13,6 +13,8 @@ int main()
     int risposta8;
     float risposta9;
     int risposta10;
+    char risposta11[50];
+    char risposta12[50];
     inizio1:
     printf("Salve e benvenuti sulla nuova app STAYHEALTHY per il benessere!\n \nSelezionare una delle seguenti opzioni");
     inizio:
@@ -814,7 +816,8 @@ int main()
     {
         printf("Benvenuto nella sezione Schede di allenamento\n");
         printf("Inserisci quale è il tuo obbiettivo da raggiungere attraverso queste schede:\n");
-        printf("1. Definizione\n2. Dimagrimento\n3. Massa muscolare (1/2/3)");
+        printf("1. Definizione\n2. Dimagrimento\n3. Massa muscolare (1/2/3)\n\n");
+        printf("(Ricordati sempre di affincare l'esercizio all'alimentazione, puoi consultare la sezione 7 per avere un piano di alimentazione bilanciato)");
         scanf("%d", &risposta10);
         if (risposta10 == 1)
         {
@@ -872,7 +875,100 @@ int main()
             }
         }
     }
-}
+    else if(strcmp(risposta1, "7.") == 0 || strcmp(risposta1, "Alimentazione") == 0 || strcmp(risposta1, "cibo") == 0 || strcmp(risposta1, "7") == 0) 
+    {
+        printf("Benvenuto nella sezione -Alimentazione-");
+        printf("Seguire una dieta bilanciata è fondamentale per avere una vita sana, qui puoi trovare degli esempi di diete bilanciate.\nA seconda del proprio obiettivo, incrementare o diminuire le dosi.\nVuoi continuare? (si/no)");
+        scanf("%s", risposta11 );
+        if (strcmp(risposta11, "si") == 0)
+        {
+            printf("Desideri visualizzare la:\n1. Colazione\n2. Spuntino mattutino\n3. Pranzo\n4. Merenda\n5. Cena\n(1/2/3/4/5)");
+            scanf("%s", risposta12 );
+            if (strcmp(risposta12, "1") == 0)
+            {
+                printf("COLAZIONE\n\n1\nLatte di vacca parz. scremato 1 bicchiere 150g\nYogurt bianco intero o greco 0.1 percento di grassi\n1 vasetto 125g\nLatte intero 1 tazza da tè 100g\nRicotta di vacca 50g\nProsciutto crudo magro 30g\n\n");
+                sleep(1);
+                printf("2\nMuesli, fiocchi d\'avena 2 cucchiai 30g\nCornflackes integrali 3 cucchiai 30g\nPane integrale 50g\nFette biscottate integrali 3 fette 30g");
+                sleep(1);
+                printf("Mandorle dolci o secche 10g\nNocciole 10g\nNoci 10g\nAltri semi oleosi (arachidi, semi di girasole, di zucca…) 10g");
+                sleep(1);
+                printf("4\nKiwi o altra porzione di frutta 150g");
+                sleep(1);
+                printf("5\nMarmellata a ridotto tenore di zuccheri, 1 cucchiaio 15g e un cucchiaino di Miele 5g\n\n");
+                sleep(1);
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0);
+                {
+                goto inizio;
+                }
+            }
+            else if(strcmp(risposta12, "2") == 0)
+            {
+                printf("SPUNTINO MATTUTINO:\n\nFrutta fresca 150g\n");
+                sleep(1);
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0);
+                {
+                goto inizio;
+                }
+            }
+            else if(strcmp(risposta12, "3") == 0)
+            {
+                printf("PRANZO:\n\n1 Verdure fresche a volontà\n\n");
+                sleep(1);
+                printf("2\nOlio di oliva extra vergine 1 cucchiaio 10g\n\n");
+                sleep(1);
+                printf("3\nPesce:(spigola, merluzzo,nasello, sogliola) 150g\nCarni bianche:(pollo, tacchino…) 150g\nVitello magro 100g\nRicotta di vacca, primosale 100g\nFiocchi di latte 100g\nMozzarella di vacca 80g\nLegumi cotti o in scatola 150g\nLegumi secchi (ceci, fagioli,lenticchie…) 50g\nLegumi freschi (fagioli) 100g\n\n");
+                sleep(1);
+                printf("4\nPane integrale 50g\nRiso integrale, farro, orzo 1 cucchiaio 30g\nPasta di semola 30g\n\n");
+                sleep(1);
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0);
+                {
+                goto inizio;
+                }
+            }
+            else if(strcmp(risposta12, "4") == 0)
+            {
+                printf("MERENDA:\n\n1\nFrutta fresca 150g\nPane integrale 30g\nCrackers e fette biscottate integrali, cornflackes integrali 10g\n\n");
+                sleep(1);
+                printf("2\nYogurt bianco intero 1 vasetto 125g\nRicotta di vacca 50g\nLatte di vacca parz.scremato 125g\nProsciutto crudo magro 30g\n");
+                sleep(1);
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0);
+                {
+                goto inizio;
+                }
+            }
+            else if(strcmp(risposta12, "5") == 0)
+            {
+                printf("CENA:\n\n1 Verdure fresche a volontà\n\n");
+                sleep(1);
+                printf("2\nOlio di oliva extra vergine 10g\n\n");
+                sleep(1);
+                printf("3\nPetto di pollo 100g\nConiglio 100g\nPetto di tacchino 100g\nVitellone tagli magri 100g\nArista di maiale 100g\nBresaola, prosciutto cotto 50g\nUova di gallina 2 uova 120g\nProsciutto crudo magro 50g\nTonno sott\'olio e sgocciolato 50g\nSalmone fresco 100g\n\n");
+                sleep(1);
+                printf("4\nPane integrale 50g\nPatate 150g\n\n");
+                printf("Desideri tornare alla pagina precedente? (si/no)");
+                scanf(" %s", risposta4);
+                if (strcmp(risposta4, "si") == 0);
+                {
+                goto inizio;
+                }
+            }
+        }
+    }   
+}   
+
+
+
+
+
+
 
 
 
