@@ -871,7 +871,7 @@ int main()
 
 GIORNO 3
 Scheda (gambe e dorso)
-3x8 + 1 strip.
+3x8 + 1 strip. 
 Peso
 Affondi in camminata con manubri 3x20
 Leg extension 3x12 + 1 strip.
