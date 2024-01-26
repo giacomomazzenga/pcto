@@ -11,6 +11,7 @@ int main()
     char risposta6[50];
     float risposta7;
     int risposta8;
+    float risposta9;
     inizio1:
     printf("Salve e benvenuti sulla nuova app STAYHEALTHY per il benessere!\n \nSelezionare una delle seguenti opzioni");
     inizio:
@@ -457,7 +458,363 @@ int main()
             }
         }   
     }
-    //else if 
+    else if(strcmp(risposta1, "5.") == 0 || strcmp(risposta1, "attività giornaliere") == 0 || strcmp(risposta1, "attività") == 0 || strcmp(risposta1, "5") == 0) 
+    {
+        printf("Benvenuto nella sezione -Monitoraggio delle attività giornaliere-\n");
+        sleep(2);
+        printf("Inserisci il numero di passi fatti nella giornata\n");
+        scanf("%f", &risposta9);
+        if (risposta9 > 0 && risposta9 < 1000 )
+        {
+            printf("I passi percorsi nella giornata sono insufficenti\n");
+            printf("Hai consumato meno di 35 calorie\n");
+            printf("Hai percorso circa 800m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        } 
+        else if (risposta9 >= 1000 && risposta9 < 2000 )
+        {
+            printf("I passi percorsi nella giornata sono insufficenti\n");
+            printf("Hai consumato circa 70 calorie\n");
+            printf("Hai percorso circa 1600m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        } 
+        else if (risposta9 >= 2000 && risposta9 < 3000 )
+        {
+            printf("I passi percorsi nella giornata sono insufficenti\n");
+            printf("Hai consumato circa 105 calorie\n");
+            printf("Hai percorso circa 2400m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 3000 && risposta9 < 4000 )
+        {
+            printf("I passi percorsi nella giornata sono insufficenti\n");
+            printf("Hai consumato circa 140 calorie\n");
+            printf("Hai percorso circa 3200m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        } 
+        else if (risposta9 >= 4000 && risposta9 < 5000 )
+        {
+            printf("I passi percorsi nella giornata sono insufficenti\n");
+            printf("Hai consumato circa 175 calorie\n");
+            printf("Hai percorso circa 4000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        } 
+        else if (risposta9 >= 5000 && risposta9 < 6000 )
+        {
+            printf("I passi percorsi nella giornata sono sufficenti\n");
+            printf("Hai consumato circa 210 calorie\n");
+            printf("Hai percorso circa 4800m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+         else if (risposta9 >= 6000 && risposta9 < 7000 )
+        {
+            printf("I passi percorsi nella giornata sono sufficenti\n");
+            printf("Hai consumato circa 245 calorie\n");
+            printf("Hai percorso circa 5600m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 7000 && risposta9 < 8000 )
+        {
+            printf("I passi percorsi nella giornata sono sufficenti\n");
+            printf("Hai consumato circa 280 calorie\n");
+            printf("Hai percorso circa 6400m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 8000 && risposta9 < 9000 )
+        {
+            printf("I passi percorsi nella giornata sono sufficenti\n");
+            printf("Hai consumato circa 315 calorie\n");
+            printf("Hai percorso circa 7200m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 9000 && risposta9 < 10000 )
+        {
+            printf("I passi percorsi nella giornata sono sufficenti\n");
+            printf("Hai consumato circa 350 calorie\n");
+            printf("Hai percorso circa 8000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 10000 && risposta9 < 15000)
+        {
+            printf("Hai raggiunto la soglia di passi ottimale\n");
+            printf("Hai consumato circa 450 calorie\n");
+            printf("Hai percorso circa 11300m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 15000 && risposta9 < 20000 )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale\n");
+            printf("Hai consumato circa 485 calorie\n");
+            printf("Hai percorso circa 13700m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 20000 && risposta9 < 25000 )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale\n");
+            printf("Hai consumato circa 520 calorie\n");
+            printf("Hai percorso circa 15200m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 25000 && risposta9 < 30000 )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale\n");
+            printf("Hai consumato circa 555 calorie\n");
+            printf("Hai percorso circa 17300m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 30000 && risposta9 < 35000 )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 800 calorie\n");
+            printf("Hai percorso circa 20000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 35000 && risposta9 < 40000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 1000 calorie\n");
+            printf("Hai percorso circa 25000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 40000 && risposta9 < 45000 )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 1200 calorie\n");
+            printf("Hai percorso circa 30000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 45000 && risposta9 < 50000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 1400 calorie\n");
+            printf("Hai percorso circa 35000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 50000 && risposta9 < 55000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 1600 calorie\n");
+            printf("Hai percorso circa 40000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 55000 && risposta9 < 60000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 1800 calorie\n");
+            printf("Hai percorso circa 45000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 60000 && risposta9 < 65000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 2000 calorie\n");
+            printf("Hai percorso circa 50000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 65000 && risposta9 < 70000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 2200 calorie\n");
+            printf("Hai percorso circa 55000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 70000 && risposta9 < 80000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 3000 calorie\n");
+            printf("Hai percorso circa 65000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 80000 && risposta9 < 90000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 3800 calorie\n");
+            printf("Hai percorso circa 75000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 90000 && risposta9 < 100000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 4600 calorie\n");
+            printf("Hai percorso circa 90000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 >= 100000 && risposta9 <= 110000   )
+        {
+            printf("Hai raggiunto la soglia di passi ottimale, ma ricordati di lasciare il tempo al corpo di recuperare\n");
+            printf("Non eccedere la soglia dei passi per molti giorni ripetuti\n");
+            printf("Hai consumato circa 5200 calorie\n");
+            printf("Hai percorso circa 100000m\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9 > 110000   )
+        {
+            printf("errore\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+        else if (risposta9<= 0   )
+        {
+            printf("errore\n");
+            printf("Desideri tornare alla pagina precedente? (si/no)");
+            scanf(" %s", risposta4);
+            if (strcmp(risposta4, "si") == 0)
+            {
+                goto inizio;
+            }
+        }
+    }
+    //else if
+
+
+
+
+
 }
 
 
