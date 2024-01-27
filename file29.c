@@ -178,7 +178,9 @@ int main()
             printf("5. Parco Regionale dell'Appia Antica\n");
             printf("6. Villa Doria Pamphilj\n");
             printf("7. Villa Torlonia\n");
-            printf("8. Villa Celimontana\n\n");
+            printf("8. Villa Celimontana\n");
+            printf("9. Villa Borghese\n");
+            printf("10. Villa Sciarra\n\n");
             printf("Vuoi tornare alla pagina precedente? (si/no)\n");
                 scanf(" %s", risposta4);
                 if (strcmp(risposta4, "si") == 0)
@@ -236,16 +238,10 @@ int main()
     {
         printf("Benvenuto nella sezione -Controllo del sonno-\n");
         sleep(2);
-        printf("Inserisci le ore di sonno dormite\nO premi + per tornare alla pagina precedente");
+        printf("Inserisci le ore di sonno dormite\n");
         scanf("%f", &risposta7);
-        if(strcmp(risposta7, "+") == 0)
-        {
-            goto inizio1;
-        }
-        else
-        {
-            printf("Inserire il numero di risvegli durante la notte\n (da 0 a 4)\n\n");
-            scanf ("%d", &risposta8);
+        printf("Inserire il numero di risvegli durante la notte\n (da 0 a 4)\n\n");
+        scanf ("%d", &risposta8);
             if (risposta7 >= 8.30 && risposta8 == 0)
             {
                 printf("Il tuo sonno è stato ottimale\nIl tuo punteggio sonno è: 100\n");
@@ -467,7 +463,7 @@ int main()
                 }
             }
         }   
-    }
+
     else if(strcmp(risposta1, "5.") == 0 || strcmp(risposta1, "attività giornaliere") == 0 || strcmp(risposta1, "attività") == 0 || strcmp(risposta1, "5") == 0) 
     {
         printf("Benvenuto nella sezione -Monitoraggio delle attività giornaliere-\n");
